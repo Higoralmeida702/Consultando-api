@@ -1,6 +1,8 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
+import Home from "./Components/Home";
+import "./Styles.css";
+
 function App() {
   const [posts, setPosts] = useState([]);
 
@@ -17,8 +19,11 @@ function App() {
     getPosts();
   }, []);
 
-  return;
-  <div></div>;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }
 
 export default App;
